@@ -1,0 +1,123 @@
+.custom-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Georama";
+}
+
+.custom-select-label {
+    font-size: 14px;
+    font-weight: 1000;
+    color: #65636e;
+    margin-bottom: 4px;
+}
+
+.custom-select-label.top-left {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.custom-select-label.top-right {
+    text-align: right;
+    align-self: flex-end;
+}
+
+
+
+.custom-select-container {
+    position: relative;
+    width: var(--custom-width);
+    border-radius: var(--custom-radius);
+    background-color: var(--custom-bg);
+    color: var(--custom-text);
+    border: var(--custom-border);
+    font-size: 14px;
+    user-select: none;
+    font-family: "Georama";
+}
+
+.custom-select-display {
+    height: 40px;
+    display: flex;
+    align-items: left;
+    cursor: pointer;
+    border-radius: var(--custom-radius);
+    background-color: var(--custom-bg);
+    color: var(--custom-text);
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+
+.custom-select-display.focused {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.custom-select-display.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.selected-value {
+    flex: 1;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--custom-text);
+}
+
+.select-icon.left {
+    left: 10px;
+}
+
+.select-icon.right {
+    right: 10px;
+}
+
+.custom-select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--custom-bg);
+    color: var(--custom-text);
+    border: var(--custom-border);
+    border-radius: var(--custom-radius);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 2px;
+}
+
+.custom-select-option {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.custom-select-option:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom-select-option.selected {
+    background-color: rgba(13, 110, 253, 0.2);
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.select-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

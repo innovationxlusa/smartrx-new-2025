@@ -1,0 +1,86 @@
+.smart-slider {
+    max-width: 400px;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    padding: 24px 16px;
+    border-radius: 16px;
+}
+
+.slide-content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.image-wrapper {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.slide-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.slide-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.slide-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    height: 46px;
+}
+
+.slide-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--app-theme-color);
+    transform: scale(1.2);
+}
+
+/* 👇 Add this media query for mobile */
+@media (max-width: 480px) {
+    .image-wrapper {
+        height: 130px; /* Smaller image height for mobile */
+    }
+
+    .slide-title {
+        font-size: 1rem;
+    }
+
+    .slide-subtitle {
+        font-size: 0.85rem;
+    }
+}

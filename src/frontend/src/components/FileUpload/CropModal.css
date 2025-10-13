@@ -1,0 +1,82 @@
+/* Buttons */
+.action-button {
+    flex: 1;
+    background-color: #5d3fd3; /* Deep purple */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #4b2bb7; /* Slightly darker on hover */
+}
+
+/* Sliders */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #d1c4e9; /* Light purple */
+    border-radius: 2px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #5d3fd3; /* Deep purple thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    margin-top: -6px; /* center thumb */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #5d3fd3;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Control Groups */
+.control-group {
+    margin-bottom: 20px;
+}
+
+/* Minor tweaks */
+.editor-controls h5 {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.filter-buttons button,
+.aspect-buttons button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover,
+.aspect-buttons button:hover {
+    background-color: #d1c4e9;
+}
+
+.file-navigation svg {
+    font-size: 28px;
+}
+
+.file-navigation svg:hover {
+    color: var(--app-theme-color);
+}
