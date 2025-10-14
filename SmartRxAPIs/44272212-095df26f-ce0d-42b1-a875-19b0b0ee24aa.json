@@ -2476,6 +2476,318 @@
 			"name": "Rewards",
 			"item": [
 				{
+					"name": "Reward Save",
+					"id": "44272212-2d5db7c4-80ff-4aab-9793-ed5f45416cb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Heading\":\"Convert Prescription into SmartRx and Reedem 400 point\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":400,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/CreateReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"CreateReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Update",
+					"id": "44272212-81932de8-fe97-4e37-947e-9ba75f5ad1fa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/UpdateReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"UpdateReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Get by Id",
+					"id": "44272212-27cc8876-1d7c-48bc-a9f8-a71bee63f13f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/GetRewardById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"GetRewardById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Get All",
+					"id": "44272212-f3e3858d-1a66-439f-b742-02be681b889f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/GetAllRewards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"GetAllRewards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Save",
+					"id": "44272212-6a121edf-87d2-4ead-b0bd-21806cc33a9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plus\",\r\n    \"Description\":\"Start your journey\",\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/CreateRewardBadge",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"CreateRewardBadge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Update",
+					"id": "44272212-fe8c1a9c-9b26-46f1-836f-e6f4cd8f97e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Id\":8,\r\n    \"Name\":\"Premium Plus\",\r\n    \"Description\":\"Your are at pick point of your journey. Enjoy the facility\",\r\n    \"IsActive\":true,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/UpdateRewardBadge",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"UpdateRewardBadge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Get by Id",
+					"id": "44272212-a6a51d02-cd76-4ba8-ac6e-b1d4c94302fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/GetRewardBadgeById/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"GetRewardBadgeById",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Delete by Id",
+					"id": "44272212-1e5d5686-b407-4ad1-90c6-da6088bebe9f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/DeleteRewardBadge/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"DeleteRewardBadge",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Get All",
+					"id": "44272212-52f85074-8588-4743-a42f-b55d4831653f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/GetAllRewardBadges",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"GetAllRewardBadges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Benefits Save",
 					"id": "44272212-ea9e527c-98ad-40dc-8803-e521e402f07b",
 					"protocolProfileBehavior": {
@@ -2832,143 +3144,6 @@
 					"response": []
 				},
 				{
-					"name": "Reward Save",
-					"id": "44272212-2d5db7c4-80ff-4aab-9793-ed5f45416cb6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Heading\":\"Convert Prescription into SmartRx and Reedem 400 point\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":400,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/Reward/CreateReward",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"Reward",
-								"CreateReward"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Update",
-					"id": "44272212-81932de8-fe97-4e37-947e-9ba75f5ad1fa",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/Reward/UpdateReward",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"Reward",
-								"UpdateReward"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Get by Id",
-					"id": "44272212-27cc8876-1d7c-48bc-a9f8-a71bee63f13f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/Reward/GetRewardById/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"Reward",
-								"GetRewardById",
-								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Get All",
-					"id": "44272212-f3e3858d-1a66-439f-b742-02be681b889f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/Reward/GetAllRewards",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"Reward",
-								"GetAllRewards"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Reward Update Delete by Id",
 					"id": "44272212-92f70ed2-f96d-4382-b75b-9c34d9ee8db3",
 					"protocolProfileBehavior": {
@@ -2998,181 +3173,6 @@
 								"Reward",
 								"DeleteReward",
 								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Badge Save",
-					"id": "44272212-6a121edf-87d2-4ead-b0bd-21806cc33a9c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \r\n    \"Name\":\"Basic Plus\",\r\n    \"Description\":\"Start your journey\",\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/RewardBadge/CreateRewardBadge",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"RewardBadge",
-								"CreateRewardBadge"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Badge Update",
-					"id": "44272212-fe8c1a9c-9b26-46f1-836f-e6f4cd8f97e1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \r\n    \"Id\":8,\r\n    \"Name\":\"Premium Plus\",\r\n    \"Description\":\"Your are at pick point of your journey. Enjoy the facility\",\r\n    \"IsActive\":true,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/RewardBadge/UpdateRewardBadge",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"RewardBadge",
-								"UpdateRewardBadge"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Badge Get by Id",
-					"id": "44272212-a6a51d02-cd76-4ba8-ac6e-b1d4c94302fc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/RewardBadge/GetRewardBadgeById/8",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"RewardBadge",
-								"GetRewardBadgeById",
-								"8"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Badge Delete by Id",
-					"id": "44272212-1e5d5686-b407-4ad1-90c6-da6088bebe9f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/RewardBadge/DeleteRewardBadge/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"RewardBadge",
-								"DeleteRewardBadge",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Badge Get All",
-					"id": "44272212-52f85074-8588-4743-a42f-b55d4831653f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/RewardBadge/GetAllRewardBadges",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"RewardBadge",
-								"GetAllRewardBadges"
 							]
 						}
 					},
