@@ -33,7 +33,7 @@ PMSBackend/
 In VS Code:
 1. **Navigate to the backend folder:**
    ```bash
-   cd path\to\smartrx-revamp\src\backend\PMSBackend
+   cd path\to\src\backend\PMSBackend
    ```
 
 2. **Restore dependencies:**
@@ -294,3 +294,18 @@ For issues or questions, contact the development team.
 - **API Version**: 1.0
 - **.NET Version**: 8.0
 - **Last Updated**: October 2025
+
+## Deployment Guide
+- Basic Single Deployment in IIS
+- Publish the backend project
+   ** Right click on main project- PMSBackend.API>Publish
+   ** Configure for Folder publish - folder location, configuration (Release), Delete existing file(true), Target Framework (.NET 8.0), Target Runtime (Portable)
+   ** Transfer the published folder into prepared server containing IIS
+   ** Enable IIS features
+   ** Create a new website in IIS and locate a folder where published folder need to put.
+   ** Keep the published folder in that path
+   ** Set port, Application Pool(.NET version- for .net core create an unmanaged code based pool)
+   ** For ssl, please get a real time ssl certificate, it is mandatory
+   ** Refresh & Browse the URL with assigned port.
+
+
