@@ -2613,7 +2613,7 @@
 					"response": []
 				},
 				{
-					"name": "Reward Benefits Get by Id Copy",
+					"name": "Reward Benefits Get All",
 					"id": "44272212-6ed5d57d-ea9c-4b10-a6bc-d59504d9d93d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
