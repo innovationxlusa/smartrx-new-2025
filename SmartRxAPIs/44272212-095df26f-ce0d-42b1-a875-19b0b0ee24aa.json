@@ -2613,6 +2613,41 @@
 					"response": []
 				},
 				{
+					"name": "Reward Update Delete by Id",
+					"id": "44272212-92f70ed2-f96d-4382-b75b-9c34d9ee8db3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/DeleteReward/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"DeleteReward",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Badge Save",
 					"id": "44272212-6a121edf-87d2-4ead-b0bd-21806cc33a9c",
 					"protocolProfileBehavior": {
@@ -3138,41 +3173,6 @@
 								"PatientReward",
 								"DeletePatientReward",
 								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Reward Update Delete by Id",
-					"id": "44272212-92f70ed2-f96d-4382-b75b-9c34d9ee8db3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Id\":1,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/Reward/DeleteReward/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"Reward",
-								"DeleteReward",
-								"2"
 							]
 						}
 					},
