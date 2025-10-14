@@ -1,0 +1,3037 @@
+{
+	"info": {
+		"_postman_id": "44272212-095df26f-ce0d-42b1-a875-19b0b0ee24aa",
+		"name": "SmartRx-Backend-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create New User",
+					"id": "44272212-302e6cfe-d418-4741-a9cc-37e4f2e49b9a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"UserName\":\"01996806601\",\r\n    \"Password\":null,\r\n    \"MobileNo\":\"01996806601\",\r\n    \"Gender\":2,\r\n    \"DateOfBirth\":\"2025-025-27\",\r\n    \"FirstName\":\"Shahanaz\",\r\n    \"LastName\":\"Sultana\",\r\n    \"AuthMethod\":2,\r\n    \"Status\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User Profile",
+					"id": "44272212-1482c56d-ad47-4d8a-ae57-bf50850d0462",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Id\":2,\r\n    \"UserCode\":\"0000000001\",\r\n    \"UserName\":\"01996806686\",\r\n    \"Password\":\"1234\",\r\n    \"MobileNo\":\"01996806688\",\r\n    \"DateOfBirth\":\"2025-02-27\",\r\n    \"Gender\":2,\r\n    \"AuthMethod\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44348/api/user/EditUserProfile/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44348",
+							"path": [
+								"api",
+								"user",
+								"EditUserProfile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"id": "44272212-30ea53c8-18c1-4ca4-92f4-2e1479aa368b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/user/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"user",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users Copy",
+					"id": "44272212-38b19905-d6e9-448f-ac18-8453d9c91e55",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/user/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"user",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by User Name",
+					"id": "44272212-4ecde911-477d-46d8-aae6-796406b4cf5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by username Docker",
+					"id": "44272212-ed44d3ba-7262-448f-b527-2ee315539e32",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "44272212-c854b4c6-3b93-4c06-bfd5-f15091f47fe4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://192.168.40.112:8443/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"40",
+								"112"
+							],
+							"port": "8443",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-f5df6a89-8524-4630-b422-9f0d65b7914a"
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Create Role",
+					"id": "44272212-9ec615d2-a8f6-41f0-9681-a09851c0e95d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Roles",
+					"id": "44272212-1ae74ec1-ea9a-4476-ac4c-8540535d3f8b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-516338b9-0267-422a-b9a4-c01097a8b2d3"
+		},
+		{
+			"name": "UserRoles",
+			"item": [
+				{
+					"name": "Create User Wise Role",
+					"id": "44272212-d27e6cfc-e6d1-44b8-b8fe-4b92c7c870d1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User Wise Role by User Name",
+					"id": "44272212-6f548959-86fb-4695-84f9-29a7aadb57cf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User By User Id",
+					"id": "44272212-8bee2aaf-c30b-486d-92ec-3e33bd6803f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-1a0e70ed-7395-4c1c-bd20-d0323f871d76"
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"id": "44272212-4b26d5f9-9e40-4a1b-b154-319bdb455282",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"01716155239\",\r\n    \"AuthType\":2,\r\n    \"Password\":\"123456aA@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.40.112:9090/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"40",
+								"112"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Copy",
+					"id": "44272212-ce448be0-787f-4b87-bd7f-f3f373c52a5f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//     \"UserName\":\"01716155239\",\r\n//     \"AuthType\":2,\r\n//     \"Password\":\"123456aA@\"\r\n// }\r\n{\r\n    \"Otp\": \"\",\r\n    \"UserId\": \"\",\r\n    \"AuthType\": 2,\r\n    \"UserName\": \"8801716155239\",\r\n    \"Password\": \"\",\r\n    \"rememberMe\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://182.160.111.50:8443/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"182",
+								"160",
+								"111",
+								"50"
+							],
+							"port": "8443",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify-otp",
+					"id": "44272212-4a253ed7-62b2-4fa4-8ac1-589b91e3f443",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserId\":\"6\",\r\n    \"UserCode\":\"0000000006\",\r\n    \"UserName\":\"0000000006\",\r\n    \"MobileNumber\":\"externaluser\",\r\n    \"FullName\":\"Rakibul Islam\",\r\n    \"Otp\":\"1234\",\r\n    \"AuthType\":2,\r\n    \"Roles\":[6]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44348/api/auth/verify-otp",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44348",
+							"path": [
+								"api",
+								"auth",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-8850ddf9-8d62-4a03-9958-27c08555b4b2"
+		},
+		{
+			"name": "File Upload",
+			"item": [
+				{
+					"name": "File Upload",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 400\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(400);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Presence of response schema properties\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.data).to.exist;\r",
+									"    pm.expect(responseData.statusCode).to.exist;\r",
+									"    pm.expect(responseData.status).to.exist;\r",
+									"    pm.expect(responseData.message).to.exist;\r",
+									"    pm.expect(responseData.stackTrace).to.exist;\r",
+									"    pm.expect(responseData.hrResult).to.exist;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify that the Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "35e4ed49-c8bb-430c-972c-1d41f520c94c"
+							}
+						}
+					],
+					"id": "44272212-2edee569-f994-4ad9-9385-c44e81f1d73b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"contentType": "",
+									"type": "file",
+									"src": "/D:/WorkFolder/SmartRxDev/BackendSourceCode/SmartRxAPI/HealthCareAPI/Photos/Thumbnail/12.jpg"
+								},
+								{
+									"key": "LoginUserId",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/file-upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"file-upload"
+							]
+						},
+						"description": "### Prescription File Upload\n\nThis API endpoint allows the user to upload a prescription file along with relevant details.\n\n#### Request Body\n\n- `File` (file): The prescription file to be uploaded.\n    \n- `FileName` (text): The name of the file.\n    \n- `FolderName` (text): The name of the folder where the file will be stored.\n    \n- `UniqueFileId` (text): A unique identifier for the file.\n    \n- `InsertedBy` (text): The user who is uploading the file.\n    \n- `FilePath` (text): The path where the file will be stored.\n    \n- `SeqNo` (text): Sequence number for the file.\n    \n\n#### Response\n\nThe response of this request is in JSON format with the following schema:\n\n``` json\n{\n    \"data\": null,\n    \"statusCode\": 0,\n    \"status\": \"\",\n    \"message\": \"\",\n    \"stackTrace\": null,\n    \"hrResult\": null\n}\n\n ```"
+					},
+					"response": []
+				},
+				{
+					"name": "File Upload PDF",
+					"id": "44272212-57e31440-e4e9-4033-b10c-951c934bc5e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/pc/Downloads/Morium begum 2.pdf"
+								},
+								{
+									"key": "LoginUserId",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/file-upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"file-upload"
+							]
+						},
+						"description": "### Prescription File Upload\n\nThis API endpoint allows the user to upload a prescription file along with relevant details.\n\n#### Request Body\n\n- `File` (file): The prescription file to be uploaded.\n    \n- `FileName` (text): The name of the file.\n    \n- `FolderName` (text): The name of the folder where the file will be stored.\n    \n- `UniqueFileId` (text): A unique identifier for the file.\n    \n- `InsertedBy` (text): The user who is uploading the file.\n    \n- `FilePath` (text): The path where the file will be stored.\n    \n- `SeqNo` (text): Sequence number for the file.\n    \n\n#### Response\n\nThe response of this request is in JSON format with the following schema:\n\n``` json\n{\n    \"data\": null,\n    \"statusCode\": 0,\n    \"status\": \"\",\n    \"message\": \"\",\n    \"stackTrace\": null,\n    \"hrResult\": null\n}\n\n ```"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Uploaded File",
+					"id": "44272212-46460bf3-a522-48be-8766-cab5d84a5335",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PrescriptionId\":11,\r\n    \"FolderId\":17,\r\n    \"UserId\":7,\r\n    \"IsExistingPatient\":null,\r\n    \"PatientProfileId\":null,\r\n    \"HasExistingRelative\":null,\r\n    \"RelativePatientIds\":null,\r\n    \"IsLocked\":null,\r\n    \"IsReported\":null,\r\n    \"ReportReason\":null,\r\n    \"ReportDetails\":null,\r\n    \"IsRecommended\":null,\r\n    \"IsApproved\":null,\r\n    \"IsCompleted\":null,\r\n    \"UpdatedBy\":7,\r\n    \"Tag1\":\"Fever\",\r\n    \"Tag2\":null,\r\n    \"Tag3\":null,\r\n    \"Tag4\":null,\r\n    \"Tag5\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/update-uploaded-file/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"update-uploaded-file",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Any File Uploaded",
+					"id": "44272212-96e2b7cb-9cca-41b1-ae1d-5525d48bec05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/IsExistsAnyFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"IsExistsAnyFile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request For SmartRx",
+					"id": "44272212-16535c6d-cd68-4bad-b62d-fb17a8a6faa9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/update-smartrx-request/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"update-smartrx-request",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File Delete",
+					"id": "44272212-854b6999-b871-485a-8d8b-35931fdc951d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PrescriptionId\":6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/delete-prescription/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"delete-prescription",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File Download",
+					"id": "44272212-bd50dd57-8695-46fe-a40e-e5cb13cf2556",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"contentType": "",
+									"type": "file",
+									"src": "/D:/WorkFolder/SmartRxDev/BackendSourceCode/SmartRxAPI/HealthCareAPI/Photos/Thumbnail/12.jpg"
+								},
+								{
+									"key": "LoginUserId",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/prescriptionupload/download/50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"prescriptionupload",
+								"download",
+								"50"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-e5f2fca9-3c8b-4839-85b8-c4a2b5e9c6b2"
+		},
+		{
+			"name": "Folder Details",
+			"item": [
+				{
+					"name": "Create Folder",
+					"id": "44272212-36145090-0c66-4775-8da2-d6ff5475fe1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"ParentFolderId\":1,\r\n   \"PreviousFolderHierarchy\":0,\r\n   \"FolderHierarchy\":1,\r\n   \"FolderName\":\"BrowseRx folder\",\r\n   \"Description\":\"Testing a folder\",\r\n   \"PatientProfileId\":null,\r\n   \"LoginUserId\":7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/folder/create-folder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"folder",
+								"create-folder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Folder",
+					"id": "44272212-a80fec95-66d1-4886-a269-86eb3014df13",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":6,\r\n    \"ParentFolderId\":1,\r\n    \"PreviousFolderHierarchy\":0,\r\n    \"FolderHierarchy\":1,\r\n    \"FolderName\":\"SmartRx TIL Shahanaz\",\r\n    \"LoginUserId\":8\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/folder/update-folder/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"folder",
+								"update-folder",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Folder",
+					"id": "44272212-926e69be-bd9f-4eac-b32e-adc4207dbe37",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserId\":10,\r\n    \"FolderId\":11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/folder/delete-folder/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"folder",
+								"delete-folder",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Foder List by userid",
+					"id": "44272212-e5b639ac-955d-4870-abf1-bef9f3df913e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/folder/GetAllFolders/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"folder",
+								"GetAllFolders",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-447f75fa-4f98-4cfc-bba9-700697af8c77"
+		},
+		{
+			"name": "Browse Rx",
+			"item": [
+				{
+					"name": "BrowseRx-All Folders and Files",
+					"id": "44272212-06357349-2d6f-4369-8531-95868b3dcfce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserId\":8,\r\n    \"FolderId\":null,\r\n    \"FolderHeirarchy\":0,\r\n    \"ParentFolderId\":null,\r\n    \"CurrentFolderPath\":null,\r\n    \"PagingSorting\":{\r\n        \"PageNumber\":1,\r\n        \"PageSize\":20,\r\n        \"SortBy\":\"name\",\r\n        \"SortDirection\":\"asc\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/BrowseRx/getallparentfoldersandfiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"BrowseRx",
+								"getallparentfoldersandfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrowseRx-All Folders and Files Patient Switch",
+					"id": "44272212-7f0da010-cf36-40ce-aa4f-93aa4c3e91c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SearchParams\":{\r\n        \"UserId\":8,\r\n        \"SearchKeyword\":null,\r\n        \"SearchColumn\":null,\r\n        \"PagingSorting\":{\r\n            \"PageNumber\":1,\r\n            \"PageSize\":10,\r\n            \"SortBy\":\"name\",\r\n            \"SortDirection\":\"asc\"\r\n        }\r\n    } \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/BrowseRx/getpatientprescriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"BrowseRx",
+								"getpatientprescriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrowseRx-Single patient smartrx, all waiting & uncategorized",
+					"id": "44272212-82ea5b0c-91c2-4e76-bd05-3d5c6cf54c69",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n        \"UserId\":8,\r\n        \"PatientId\":null,\r\n        \"PrescriptionType\":\"uncategorized\",// \"smartrx\", \"waiting\", \"uncategorized\"\r\n        \"PagingSorting\":{\r\n            \"PageNumber\":1,\r\n            \"PageSize\":10,\r\n            \"SortBy\":\"name\",\r\n            \"SortDirection\":\"asc\"\r\n        }\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/BrowseRx/getpatientprescriptionsbytype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"BrowseRx",
+								"getpatientprescriptionsbytype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Folders and Files",
+					"id": "44272212-c74f7109-8ca1-4b09-8e3c-5f0ca9a62ced",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"UserId\":8,\r\n    \"PatientId\":null,\r\n    \"FolderId\":null,\r\n    \"FolderHeirarchy\":0,\r\n    \"ParentFolderId\":null,\r\n    \"CurrentFolderPath\":null,\r\n    \"PagingSorting\":{\r\n        \"PageNumber\":1,\r\n        \"PageSize\":10,\r\n        \"SortBy\":\"name\",\r\n        \"SortDirection\":\"asc\"\r\n    }   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/BrowseRx/getallparentfoldersandfiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"BrowseRx",
+								"getallparentfoldersandfiles"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-67686ff4-6396-4a7d-aaee-5ea3031c6192"
+		},
+		{
+			"name": "SmartRx-Insider",
+			"item": [
+				{
+					"name": "SmartRx Other Expense",
+					"item": [
+						{
+							"name": "SmartRx Other Expense Add",
+							"id": "44272212-1c9fa61b-e129-4549-b1ab-e2010e3b35eb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"ExpenseName\":\"Other test expense\",\r\n    \"Description\":null,\r\n    \"Amount\":500,\r\n    \"CurrencyUnitId\":17,\r\n    \"ExpenseDate\":\"2025-09-15\",\r\n    \"ExpenseNotes\":null,\r\n    \"LoginUserId\":8\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7000/api/SmartRxOtherExpense/AddSmartRxOtherExpense",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"path": [
+										"api",
+										"SmartRxOtherExpense",
+										"AddSmartRxOtherExpense"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SmartRx Other Expense Delete",
+							"id": "44272212-064b1e00-a0e4-49dc-9399-3bfe0ce695cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"ExpenseName\":\"Test expense\",\r\n    \"Description\":null,\r\n    \"Amount\":500,\r\n    \"CurrencyUnitId\":17,\r\n    \"ExpenseDate\":\"2025-09-15\",\r\n    \"ExpenseNotes\":null,\r\n    \"LoginUserId\":8\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7000/api/SmartRxOtherExpense/DeleteSmartRxOtherExpense/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"path": [
+										"api",
+										"SmartRxOtherExpense",
+										"DeleteSmartRxOtherExpense",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SmartRx Other Expense Edit",
+							"id": "44272212-c3bc310a-50f3-488b-a92f-fcb6bbc44b2b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\":3,\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"ExpenseName\":\"Other Test expense checking\",\r\n    \"Description\":null,\r\n    \"Amount\":500,\r\n    \"CurrencyUnitId\":17,\r\n    \"ExpenseDate\":\"2025-09-15\",\r\n    \"ExpenseNotes\":null,\r\n    \"LoginUserId\":8\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7000/api/SmartRxOtherExpense/EditSmartRxOtherExpense",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"path": [
+										"api",
+										"SmartRxOtherExpense",
+										"EditSmartRxOtherExpense"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SmartRx Get Other Expense",
+							"id": "44272212-335d1973-4d1f-4efc-92b2-5e9d38caa50c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "smartRxMasterId",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "patientId",
+											"value": "null",
+											"type": "text"
+										},
+										{
+											"key": "prescriptionId",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:7000/api/SmartRxOtherExpense/GetSmartRxOtherExpenses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"path": [
+										"api",
+										"SmartRxOtherExpense",
+										"GetSmartRxOtherExpenses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SmartRx Get Other Expense By Id",
+							"id": "44272212-ab158c68-4ae3-41e8-b268-656ed516b616",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "smartRxMasterId",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "patientId",
+											"value": "null",
+											"type": "text"
+										},
+										{
+											"key": "prescriptionId",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:7000/api/SmartRxOtherExpense/GetSmartRxOtherExpenseById/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7000",
+									"path": [
+										"api",
+										"SmartRxOtherExpense",
+										"GetSmartRxOtherExpenseById",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "44272212-7094c385-b469-4e18-ae06-b0609b8052df"
+				},
+				{
+					"name": "Get SmartRx-Insider All Data",
+					"id": "44272212-8cb46f9d-b92b-4c3a-9c40-ed6a132057c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/getsmartrxinsiderbyid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"getsmartrxinsiderbyid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Vital Add",
+					"id": "44272212-ab193bc3-742d-42f7-aa89-939dead39939",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,  \r\n    \"VitalId\":69,\r\n    \"VitalValue\":16,\r\n    \"LoginUserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/add-smartrx-vital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"add-smartrx-vital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Vital Edit",
+					"id": "44272212-704fe687-98d9-4937-9749-296931f2ad54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,   \r\n    \"VitalId\":69,\r\n    \"VitalValue\":16,\r\n    \"LoginUserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/edit-smartrx-vital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"edit-smartrx-vital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Add Edit Investigation Test Centers",
+					"id": "44272212-46de0a65-fed2-414d-a4f2-f8b2ede9a4f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"SmartRxMasterId\": 2,\r\n\t\"PrescriptionId\": 3,\r\n\t\"LoginUserId\": 8,\r\n\t\"PatientTestCenterWiseList\": [\r\n\t\t{\r\n\t\t\t\"Id\": 11,\r\n\t\t\t\"SmartRxMasterId\": 2,\r\n\t\t\t\"PrescriptionId\": 3,\r\n\t\t\t\"TestId\": 1,\r\n\t\t\t\"TestCenterIds\": \"17\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Id\": 12,\r\n\t\t\t\"SmartRxMasterId\": 2,\r\n\t\t\t\"PrescriptionId\": 3,\r\n\t\t\t\"TestId\": 10,\r\n\t\t\t\"TestCenterIds\": \"17\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Id\": 13,\r\n\t\t\t\"SmartRxMasterId\": 2,\r\n\t\t\t\"PrescriptionId\": 3,\r\n\t\t\t\"TestId\": 11,\r\n\t\t\t\"TestCenterIds\": \"17\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"Id\": 14,\r\n\t\t\t\"SmartRxMasterId\": 2,\r\n\t\t\t\"PrescriptionId\": 3,\r\n\t\t\t\"TestId\": 14,\r\n\t\t\t\"TestCenterIds\": \"17\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/edit-smartrx-investigation-testcenters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"edit-smartrx-investigation-testcenters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medicine List To Compare",
+					"id": "44272212-d8c7108c-baac-4d35-b243-fba7cf35bc1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"PatientMedicineId\":0,\r\n    \"MedicineId\":9,\r\n    \"PagingSorting\":{\r\n        \"PageNumber\":1,\r\n        \"PageSize\":10,\r\n        \"SortBy\":\"name\",\r\n        \"SortDirection\":\"asc\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/medicine-list-to-compare",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"medicine-list-to-compare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test List To Compare",
+					"id": "44272212-d959eba8-9853-44bb-b710-ecfcb87cdb90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TestCenterName\":null,\r\n    \"IsRecommended\":true,\r\n    \"SourceTestIds\":[1,10,11,12,13,14],\r\n    \"PagingSorting\":{\r\n        \"PageNumber\":1,\r\n        \"PageSize\":20,\r\n        \"SortBy\":\"name\",\r\n        \"SortDirection\":\"asc\"\r\n    }   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/investigation-list-to-compare",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"investigation-list-to-compare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Doctor Review Update",
+					"id": "44272212-4b9b0483-f4a3-4070-bbd9-55e0634ea131",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n  \"SmartRxMasterId\": 2,\r\n  \"PrescriptionId\":3,\r\n  \"DoctorId\":3,\r\n  \"TravelTimeMinute\":120,\r\n  \"WaitingTimeMinute\":120,\r\n  \"DoctorConsultingDuration\":4,\r\n  \"FeeCharged\":1000,\r\n  \"FeeChargedMeasurementUnit\":\"৳\",\r\n  \"TransportCost\":200,\r\n  \"OtherCost\":50,\r\n  \"Rating\":3.7,\r\n  \"Comments\":\"test\",\r\n  \"loginUserId\": 8\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/change-smartrx-doctor-review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"change-smartrx-doctor-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Center List",
+					"id": "44272212-28bd5667-03cc-4b80-afdf-b58eb7228250",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/investigation-testcenters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"investigation-testcenters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test List Selected By User Or Patient",
+					"id": "44272212-9c953259-9ed9-4d62-bace-e7bc0b3c03c6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"DoctorsTestList\":[1, 10,11,\r\n\t\t12,\r\n\t\t14,\r\n\t\t13],\r\n    \"SmartrxId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"IsDoctorRecommended\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/investigation-list-selected-or-recommended",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"investigation-list-selected-or-recommended"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx list with Vitals of an User",
+					"id": "44272212-2413b8d0-10fd-4cbd-9e7c-5de6f5ea332f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"UserId\":8,\r\n    \"PatientId\":null,\r\n    \"VitalName\":null,//\"Pulse Rate\",\r\n    \"SearchKeyword\":\"John\",\r\n    \"SearchColumn\":null,\r\n    \"FromDate\":\"2025-08-25T00:00:00\",\r\n    \"ToDate\":\"2025-08-25T00:00:00\",\r\n    \"PagingSorting\":{\r\n        \"PageNumber\":1,\r\n        \"PageSize\":20,\r\n        \"SortBy\":\"name\",\r\n        \"SortDirection\":\"asc\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/GetAllSmartRxWithVitalsByUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"GetAllSmartRxWithVitalsByUserId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Medicine Wishlist",
+					"id": "44272212-b1bfe762-d9cc-44bb-87c4-358ee5be3c61",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"MedicineId\":16,\r\n    \"WishListIds\":[18,20],\r\n    \"LoginUserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/edit-smartrx-medicine-wishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"edit-smartrx-medicine-wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Investigation Wishlist",
+					"id": "44272212-30182570-bbd6-4421-a2df-4ca9a8dd8402",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":2,\r\n    \"PrescriptionId\":3,\r\n    \"InvestigationId\":14,\r\n    \"WishListIds\":[64],\r\n    \"LoginUserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/edit-smartrx-investigation-wishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"edit-smartrx-investigation-wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Vital Delete",
+					"id": "44272212-843968cf-9bf2-4245-9092-7e7ba381b4b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxVitalId\":13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/smartrx-vital-delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"smartrx-vital-delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-40330ddc-ff84-406e-a66b-dcfe639d5215"
+		},
+		{
+			"name": "Vital",
+			"item": [
+				{
+					"name": "GetVitalByVitalName",
+					"id": "44272212-51a6184f-918b-4d8e-bd60-4c2238f3ae3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"VitalName\":\"Respiratory Rate\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Vital/GetVitalsByVitalName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Vital",
+								"GetVitalsByVitalName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vital FAQ by Vital Id",
+					"id": "44272212-c3dee50d-14dc-430d-bdd0-406ab120dfd3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/vital-faq-list/64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"vital-faq-list",
+								"64"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-3a1b7a54-8f7c-4a40-8bf5-a1a07acb7573"
+		},
+		{
+			"name": "Investigation",
+			"item": [
+				{
+					"name": "Get Investigation FAQ by investigation id",
+					"id": "44272212-277f78b8-6602-4c58-96a0-b1a98eb61bc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/SmartRxInsider/investigation-faq-list/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"SmartRxInsider",
+								"investigation-faq-list",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-2083ebf6-8b93-4ad2-8463-0a69bb344ac6"
+		},
+		{
+			"name": "Patient Profile",
+			"item": [
+				{
+					"name": "Get Patient Profile Details By Id",
+					"id": "44272212-e441a570-6363-465b-b18d-13a37a3b91ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PatientId\":5\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientProfile/GetPatientDetialsById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientProfile",
+								"GetPatientDetialsById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Patient Profiles By UserId",
+					"id": "44272212-aa39d453-ef8c-42f5-a27e-90fa07493a33",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 8,\r\n  \"RxType\":\"Smart Rx\",\r\n  \"searchKeyword\": null,\r\n  \"searchColumn\": null,\r\n  \"pagingSorting\": {\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10,\r\n    \"sortBy\": \"patientcode\",\r\n    \"sortDirection\": \"asc\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientProfile/GetAllPatientProfilesByUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientProfile",
+								"GetAllPatientProfilesByUserId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPatientDropdown",
+					"id": "44272212-973b0557-6379-46b9-ba47-8e31cc0db87e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientProfile/GetPatientDropdown",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientProfile",
+								"GetPatientDropdown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Patient Profile Update",
+					"id": "44272212-24bf8582-ce4a-46ee-aa2f-2ee05c3d03ae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patientId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.Id",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.PatientCode",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.firstName",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.lastName",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.nickName",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.age",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.dateOfBirth",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.gender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.bloodGroup",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.height",
+									"value": "5 ft 5 in",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightFeet",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightInches",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightMeasurementUnitId",
+									"value": "21",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.HeightMeasurementUnit",
+									"value": "ftin",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.weight",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.WeightMeasurementUnit",
+									"value": "kg",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.WeightMeasurementUnitId",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.phoneNumber",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.ProfilePhoto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profilePhotoName",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profilePhotoPath",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.address",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.policeStationId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.cityId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.postalCode",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.emergencyContact",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.maritalStatus",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profession",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.isExistingPatient",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.existingPatientId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.isRelative",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relationToPatient",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relatedToPatientId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.RelativesDropdown",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relatives",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.IsActive",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "loginUserId",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.AgeYear",
+									"value": "49",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.AgeMonth",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientProfile/UpdatePatientInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientProfile",
+								"UpdatePatientInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SmartRx Patient Profile Create",
+					"id": "44272212-e80df3d2-e335-4c79-b5fc-9aaa6b128fb5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patientId",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.Id",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.PatientCode",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.firstName",
+									"value": "null",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.lastName",
+									"value": "null",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.nickName",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.age",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.dateOfBirth",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.gender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.bloodGroup",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.height",
+									"value": "5 ft 5 in",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightFeet",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightInches",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.HeightMeasurementUnitId",
+									"value": "21",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.HeightMeasurementUnit",
+									"value": "ftin",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.weight",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.WeightMeasurementUnit",
+									"value": "kg",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.WeightMeasurementUnitId",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.phoneNumber",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.ProfilePhoto",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profilePhotoName",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profilePhotoPath",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.address",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.policeStationId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.cityId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.postalCode",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.emergencyContact",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.maritalStatus",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.profession",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.isExistingPatient",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.existingPatientId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.isRelative",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relationToPatient",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relatedToPatientId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.RelativesDropdown",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.relatives",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patientDetails.IsActive",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "loginUserId",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.AgeYear",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.AgeMonth",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientProfile/CreatePatientProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientProfile",
+								"CreatePatientProfile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-e13c4fc3-2983-45cf-b93a-d24c63ffba7d"
+		},
+		{
+			"name": "Doctor Profile",
+			"item": [
+				{
+					"name": "GetDoctorDetialsById",
+					"id": "44272212-071a90a2-6f39-44c4-a000-4e753e6f4a77",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DoctorId\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Doctor/GetDoctorDetialsById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Doctor",
+								"GetDoctorDetialsById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDoctorListByUserId",
+					"id": "44272212-8a20502f-7af7-47be-87d0-ba7e78cb9b8b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//   \"userId\": 8,\r\n//   \"patientId\":null,\r\n//   \"RxType\":\"Smart Rx\",\r\n//   \"searchKeyword\": null,\r\n//   \"searchColumn\": null,\r\n//   \"pagingSorting\": {\r\n//     \"pageNumber\": 1,\r\n//     \"pageSize\": 10,\r\n//     \"sortBy\": \"doctorcode\",\r\n//     \"sortDirection\": \"asc\"\r\n//   }\r\n// }\r\n{\r\n  \"userId\": 8,\r\n  \"doctorId\": null,\r\n  \"RxType\": \"Smart Rx\",\r\n  \"searchKeyword\": null,\r\n  \"searchColumn\": null,\r\n  \"pagingSorting\": {\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10,\r\n    \"sortBy\": \"patientcode\",\r\n    \"sortDirection\": \"asc\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Doctor/GetDoctorProfilesByUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Doctor",
+								"GetDoctorProfilesByUserId"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-b21fb25f-2c5d-4296-aecd-e6a4b799c574"
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "Dashboard-Summary",
+					"id": "44272212-6c068a7a-f1a8-42a0-8791-22fbc0ed730e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/dashboard/dashboard-summary?userId=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"dashboard",
+								"dashboard-summary"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-f210bf17-a866-44ed-b3cd-0bfa0ec6c64c"
+		},
+		{
+			"name": "Rewards",
+			"item": [
+				{
+					"name": "Reward Patient Save",
+					"id": "44272212-fe6afc92-faa3-4faf-8477-2f35688e64a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    \"BadgeId\":6,\r\n    \"EarnedNonCashablePoints\":600,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/CreatePatientReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"CreatePatientReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Patient Update",
+					"id": "44272212-de121524-0290-4228-83d2-a32b88e355ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,   \r\n    \"BadgeId\":7,\r\n    \"EarnedNonCashablePoints\":700,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/UpdatePatientReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"UpdatePatientReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Patient Get by Id",
+					"id": "44272212-2ff0a5a3-027a-4c6a-a519-ffe0c0530e20",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,   \r\n    \"BadgeId\":7,\r\n    \"EarnedNonCashablePoints\":700,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/GetPatientRewardsByUserIdAndPatientId?userId=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"GetPatientRewardsByUserIdAndPatientId"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Patient Get Summary",
+					"id": "44272212-1326ebdb-e5d8-4eb9-9e7a-35e21135a0e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,   \r\n    \"BadgeId\":7,\r\n    \"EarnedNonCashablePoints\":700,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/GetPatientRewardsSummary?userId=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"GetPatientRewardsSummary"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Patient Delete",
+					"id": "44272212-04ccf167-3e7a-45e8-ba53-10a7440ae8b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"long\":8,\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    //\"BadgeId\":\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/DeletePatientReward/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"DeletePatientReward",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Save",
+					"id": "44272212-2d5db7c4-80ff-4aab-9793-ed5f45416cb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Heading\":\"Convert Prescription into SmartRx and Reedem 400 point\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":400,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/CreateReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"CreateReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Update",
+					"id": "44272212-81932de8-fe97-4e37-947e-9ba75f5ad1fa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/UpdateReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"UpdateReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Get by Id",
+					"id": "44272212-27cc8876-1d7c-48bc-a9f8-a71bee63f13f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/GetRewardById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"GetRewardById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Get All",
+					"id": "44272212-f3e3858d-1a66-439f-b742-02be681b889f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system test\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/GetAllRewards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"GetAllRewards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Update Delete by Id",
+					"id": "44272212-92f70ed2-f96d-4382-b75b-9c34d9ee8db3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,\r\n    \"Heading\":\"Get point by uploading prescription\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":300,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"IsActive\":null,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/Reward/DeleteReward/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Reward",
+								"DeleteReward",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Save",
+					"id": "44272212-6a121edf-87d2-4ead-b0bd-21806cc33a9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plus\",\r\n    \"Description\":\"Start your journey\",\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/CreateRewardBadge",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"CreateRewardBadge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Update",
+					"id": "44272212-fe8c1a9c-9b26-46f1-836f-e6f4cd8f97e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Id\":8,\r\n    \"Name\":\"Premium Plus\",\r\n    \"Description\":\"Your are at pick point of your journey. Enjoy the facility\",\r\n    \"IsActive\":true,\r\n    \"UserId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/UpdateRewardBadge",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"UpdateRewardBadge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Get by Id",
+					"id": "44272212-a6a51d02-cd76-4ba8-ac6e-b1d4c94302fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/GetRewardBadgeById/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"GetRewardBadgeById",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Delete by Id",
+					"id": "44272212-1e5d5686-b407-4ad1-90c6-da6088bebe9f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/DeleteRewardBadge/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"DeleteRewardBadge",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Badge Get All",
+					"id": "44272212-52f85074-8588-4743-a42f-b55d4831653f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"Name\":\"Basic Plan\",\r\n    \"Description\":\"Start your journey\",\r\n    \"CreatedById\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBadge/GetAllRewardBadges",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBadge",
+								"GetAllRewardBadges"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "44272212-ef41403e-a156-41df-9140-f009e059e316"
+		},
+		{
+			"name": "Error Test API",
+			"id": "44272212-b3a16d04-7ca6-451b-8993-eeb2917e9af6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/user/throw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"user",
+						"throw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
