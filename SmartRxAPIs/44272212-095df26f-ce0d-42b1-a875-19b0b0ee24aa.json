@@ -2979,7 +2979,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/RewardBenefit/GetRewardBenefitById/1",
+							"raw": "http://localhost:7000/api/RewardBenefit/GetAllRewardBenefits",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2988,8 +2988,7 @@
 							"path": [
 								"api",
 								"RewardBenefit",
-								"GetRewardBenefitById",
-								"1"
+								"GetAllRewardBenefits"
 							]
 						}
 					},
