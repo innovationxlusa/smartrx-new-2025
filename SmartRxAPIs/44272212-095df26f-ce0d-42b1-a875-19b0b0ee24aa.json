@@ -2510,6 +2510,40 @@
 					"response": []
 				},
 				{
+					"name": "Reward Patient Save Copy",
+					"id": "44272212-ea9e527c-98ad-40dc-8803-e521e402f07b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    \"BadgeId\":6,\r\n    \"EarnedNonCashablePoints\":600,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/CreatePatientReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"CreatePatientReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Patient Update",
 					"id": "44272212-de121524-0290-4228-83d2-a32b88e355ff",
 					"protocolProfileBehavior": {
