@@ -2550,11 +2550,11 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    \"BadgeId\":6,\r\n    \"EarnedNonCashablePoints\":600,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"raw": "{\r\n    \"Id\":3,\r\n    \"Title\":\"Converting 3 prescription into smartrx get 100 points back! test\",\r\n    \"Description\":\"Do multiple test and earn reward point\",\r\n    \"RewardId\":3,\r\n    \"IsActive\":true,    \r\n    \"UserId\":8\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2562,7 +2562,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/PatientReward/CreatePatientReward",
+							"raw": "http://localhost:7000/api/RewardBenefit/UpdateRewardBenefit",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2570,8 +2570,8 @@
 							"port": "7000",
 							"path": [
 								"api",
-								"PatientReward",
-								"CreatePatientReward"
+								"RewardBenefit",
+								"UpdateRewardBenefit"
 							]
 						}
 					},
