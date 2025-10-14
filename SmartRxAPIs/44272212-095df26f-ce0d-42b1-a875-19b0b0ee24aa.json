@@ -2596,7 +2596,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/RewardBenefit/UpdateRewardBenefit",
+							"raw": "http://localhost:7000/api/RewardBenefit/DeleteRewardBenefit/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2605,7 +2605,8 @@
 							"path": [
 								"api",
 								"RewardBenefit",
-								"UpdateRewardBenefit"
+								"DeleteRewardBenefit",
+								"3"
 							]
 						}
 					},
