@@ -2510,7 +2510,7 @@
 					"response": []
 				},
 				{
-					"name": "Reward Patient Save Copy",
+					"name": "Reward Benefits Save",
 					"id": "44272212-ea9e527c-98ad-40dc-8803-e521e402f07b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
