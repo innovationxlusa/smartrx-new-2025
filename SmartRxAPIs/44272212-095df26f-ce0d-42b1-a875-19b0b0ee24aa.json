@@ -2476,40 +2476,6 @@
 			"name": "Rewards",
 			"item": [
 				{
-					"name": "Reward Patient Save",
-					"id": "44272212-fe6afc92-faa3-4faf-8477-2f35688e64a6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    \"BadgeId\":6,\r\n    \"EarnedNonCashablePoints\":600,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:7000/api/PatientReward/CreatePatientReward",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "7000",
-							"path": [
-								"api",
-								"PatientReward",
-								"CreatePatientReward"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Reward Benefits Save",
 					"id": "44272212-ea9e527c-98ad-40dc-8803-e521e402f07b",
 					"protocolProfileBehavior": {
@@ -2677,6 +2643,40 @@
 								"RewardBenefit",
 								"GetRewardBenefitById",
 								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward Patient Save",
+					"id": "44272212-fe6afc92-faa3-4faf-8477-2f35688e64a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"SmartRxMasterId\":null,\r\n    \"PrescriptionId\":null,\r\n    \"PatientId\":1,\r\n    \"BadgeId\":6,\r\n    \"EarnedNonCashablePoints\":600,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/PatientReward/CreatePatientReward",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"PatientReward",
+								"CreatePatientReward"
 							]
 						}
 					},
