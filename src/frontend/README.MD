@@ -20,7 +20,7 @@
 
 SmartRx Frontend is a modern healthcare management application built with React. It provides comprehensive patient management, prescription handling, and medical record management features.
 
-**Project Name:** rx-dev  
+**Project Name:** SmartRx-dev  
 **Version:** 0.1.0  
 **Package Manager:** Yarn 4.9.1  
 
@@ -124,7 +124,7 @@ yarn build
 # Copy build to backend (IIS deployment)
 yarn copy-to-backend
 
-# Build and deploy to backend server
+# Build and deploy to backend server (if IIS then deploy same as backend in another folder and keep the build folder in that)
 yarn deploy
 ```
 
