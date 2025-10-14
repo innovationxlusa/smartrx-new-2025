@@ -2578,13 +2578,13 @@
 					"response": []
 				},
 				{
-					"name": "Reward Benefits Update Copy",
+					"name": "Reward Benefits Delete",
 					"id": "44272212-1a1f03cd-9775-408a-bde7-d914334a1211",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "PUT",
+						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
