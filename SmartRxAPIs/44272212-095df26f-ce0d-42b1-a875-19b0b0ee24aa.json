@@ -2578,6 +2578,40 @@
 					"response": []
 				},
 				{
+					"name": "Reward Benefits Get by Id",
+					"id": "44272212-c9f3f0cd-15d1-4fa4-bc5f-a80676c873b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":3,\r\n    \"Title\":\"Converting 3 prescription into smartrx get 100 points back! test\",\r\n    \"Description\":\"Do multiple test and earn reward point\",\r\n    \"RewardId\":3,\r\n    \"IsActive\":true,    \r\n    \"UserId\":8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardBenefit/UpdateRewardBenefit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardBenefit",
+								"UpdateRewardBenefit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Patient Update",
 					"id": "44272212-de121524-0290-4228-83d2-a32b88e355ff",
 					"protocolProfileBehavior": {
