@@ -13,3 +13,5 @@ Both project guideline given in the their own project folder's Readme file. Plea
 For database full script given in main branch. Please create a database named SmartRxDB and run the script. Connect the database in backend appsettings.development.json file.<br/>
 Now run backend and frontend both following their own Readme file. 
 
+
+Postman APIs are in this link- SmartRxAPIs/44272212-095df26f-ce0d-42b1-a875-19b0b0ee24aa.json
