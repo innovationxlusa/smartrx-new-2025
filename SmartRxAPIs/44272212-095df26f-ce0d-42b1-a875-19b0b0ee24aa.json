@@ -3069,11 +3069,11 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Id\":1,   \r\n    \"BadgeId\":7,\r\n    \"EarnedNonCashablePoints\":700,\r\n    \"ConsumedNonCashablePoints\":0,\r\n    \"EarnedCashablePoints\":0,\r\n    \"ConsumedCashablePoints\":0,\r\n    \"EarnedMoney\":0,\r\n    \"ConsumedMoney\":0,\r\n    \"EncashMoney\":0,\r\n    \"Remarks\":\"test\",    \r\n    \"UserId\":8\r\n}",
+							"raw": "{\r\n    \"UserId\":8,   \r\n    \"PatientId\":null,\r\n    \"StartDate\":\"2025-10-01\",\r\n    \"EndDate\":\"2025-10-16\",\r\n        \"pagingSorting\": {\r\n        \"pageNumber\": 1,\r\n        \"pageSize\": 10,\r\n        \"sortBy\": \"patientcode\",\r\n        \"sortDirection\": \"asc\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3081,7 +3081,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/PatientReward/GetPatientRewardsByUserIdAndPatientId?userId=8",
+							"raw": "http://localhost:7000/api/PatientReward/GetPatientRewardsByUserIdAndPatientId",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -3095,7 +3095,8 @@
 							"query": [
 								{
 									"key": "userId",
-									"value": "8"
+									"value": "8",
+									"disabled": true
 								}
 							]
 						}
