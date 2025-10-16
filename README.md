@@ -14,4 +14,4 @@ For database full script given in main branch. Please create a database named Sm
 Now run backend and frontend both following their own Readme file. 
 
 
-Postman APIs are in this link- SmartRxAPIs/44272212-095df26f-ce0d-42b1-a875-19b0b0ee24aa.json
+Postman APIs are in this link- [SmartRxAPIs/44272212-095df26f-ce0d-42b1-a875-19b0b0ee24aa.json](https://github.com/innovationxlusa/smartrx-new-2025/blob/development/SmartRxAPIs/44272212-095df26f-ce0d-42b1-a875-19b0b0ee24aa.json)
