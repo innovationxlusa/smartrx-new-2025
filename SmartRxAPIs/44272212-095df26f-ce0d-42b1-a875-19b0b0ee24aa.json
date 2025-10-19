@@ -2520,7 +2520,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Heading\":\"Convert Prescription into SmartRx and Reedem 400 point\",\r\n    \"Details\":\"Upload a prescription and get reward point. You can use that point to get access to the system\",\r\n    \"IsNegativePointAllowed\":false,\r\n    \"NonCashablePoints\":400,\r\n    \"IsCashable\":false,\r\n    \"CashablePoints\":null,\r\n    \"UserId\":2\r\n}",
+							"raw": "{\r\n    \"dto\":{\r\n        \"UserId\":8,\r\n        \"FromType\":1,\r\n        \"ToType\":2,\r\n        \"Amount\":100\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2528,7 +2528,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/Reward/CreateReward",
+							"raw": "http://localhost:7000/api/RewardPointConversions/Create",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2536,8 +2536,8 @@
 							"port": "7000",
 							"path": [
 								"api",
-								"Reward",
-								"CreateReward"
+								"RewardPointConversions",
+								"Create"
 							]
 						}
 					},
