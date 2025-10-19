@@ -2562,7 +2562,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/RewardPointConversions/Create",
+							"raw": "http://localhost:7000/api/RewardPointConversions/Update",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2571,7 +2571,7 @@
 							"path": [
 								"api",
 								"RewardPointConversions",
-								"Create"
+								"Update"
 							]
 						}
 					},
