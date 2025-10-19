@@ -1,3 +1,5 @@
+**SmartRx old and new frontend source are in different node version. Please maintain both separtely to run project in both separate node version in same pc.
+
 
 It's a public repo.<br/>
 
