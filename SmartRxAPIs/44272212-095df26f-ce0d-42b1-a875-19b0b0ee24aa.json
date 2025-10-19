@@ -2612,6 +2612,40 @@
 					"response": []
 				},
 				{
+					"name": "Reward Conversion Delete Copy",
+					"id": "44272212-a76c89ad-cfdd-4330-b473-dd7dbbf48114",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dto\":{\r\n        \"UserId\":8,\r\n        \"FromType\":1,\r\n        \"ToType\":2,\r\n        \"Amount\":100\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardPointConversions/Delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardPointConversions",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Update",
 					"id": "44272212-81932de8-fe97-4e37-947e-9ba75f5ad1fa",
 					"protocolProfileBehavior": {
