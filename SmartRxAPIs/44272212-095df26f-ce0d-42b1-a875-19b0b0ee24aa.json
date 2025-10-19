@@ -2671,7 +2671,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/RewardPointConversions/GetByUserId?userId=8",
+							"raw": "http://localhost:7000/api/RewardPointConversions/GetSummary?userId=8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2680,13 +2680,12 @@
 							"path": [
 								"api",
 								"RewardPointConversions",
-								"GetByUserId"
+								"GetSummary"
 							],
 							"query": [
 								{
 									"key": "userId",
-									"value": "8",
-									"type": "text"
+									"value": "8"
 								}
 							]
 						}
