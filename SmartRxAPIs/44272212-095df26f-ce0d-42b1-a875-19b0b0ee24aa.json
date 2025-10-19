@@ -2653,7 +2653,7 @@
 					"response": []
 				},
 				{
-					"name": "Reward Conversion Get By Id Copy",
+					"name": "Reward Conversion Get Summary By Id",
 					"id": "44272212-34d3e4c4-f02e-4a1d-8d1c-c09f0cd88b89",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
