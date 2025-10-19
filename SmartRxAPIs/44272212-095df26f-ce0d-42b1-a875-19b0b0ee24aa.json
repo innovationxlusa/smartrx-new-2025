@@ -2544,6 +2544,40 @@
 					"response": []
 				},
 				{
+					"name": "Reward Conversion Update",
+					"id": "44272212-9909682f-16cf-4fa0-b1eb-9810f34dc846",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dto\":{\r\n        \"UserId\":8,\r\n        \"FromType\":1,\r\n        \"ToType\":2,\r\n        \"Amount\":100\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/api/RewardPointConversions/Create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"RewardPointConversions",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Reward Update",
 					"id": "44272212-81932de8-fe97-4e37-947e-9ba75f5ad1fa",
 					"protocolProfileBehavior": {
