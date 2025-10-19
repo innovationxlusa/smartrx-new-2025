@@ -2550,11 +2550,11 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"dto\":{\r\n        \"UserId\":8,\r\n        \"FromType\":1,\r\n        \"ToType\":2,\r\n        \"Amount\":100\r\n    }\r\n}",
+							"raw": "{\r\n    \"dto\":{\r\n        \"Id\":1,\r\n        \"FromType\":1,\r\n        \"ToType\":2,\r\n        \"Amount\":150\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2584,7 +2584,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -2596,7 +2596,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:7000/api/RewardPointConversions/Update",
+							"raw": "http://localhost:7000/api/RewardPointConversions/Delete",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2605,7 +2605,7 @@
 							"path": [
 								"api",
 								"RewardPointConversions",
-								"Update"
+								"Delete"
 							]
 						}
 					},
