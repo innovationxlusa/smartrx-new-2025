@@ -2578,7 +2578,7 @@
 					"response": []
 				},
 				{
-					"name": "Reward Conversion Update Copy",
+					"name": "Reward Conversion Delete",
 					"id": "44272212-e375b165-ead0-4f44-abdf-04cc740e4f51",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
