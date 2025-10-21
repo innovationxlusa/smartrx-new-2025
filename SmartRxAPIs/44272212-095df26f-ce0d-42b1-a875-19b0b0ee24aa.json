@@ -2016,20 +2016,17 @@
 								{
 									"key": "patientDetails.isExistingPatient",
 									"value": "",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "patientDetails.existingPatientId",
-									"value": "",
-									"type": "text",
-									"disabled": true
+									"value": "1",
+									"type": "text"
 								},
 								{
 									"key": "patientDetails.isRelative",
 									"value": "",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "patientDetails.relationToPatient",
@@ -2050,10 +2047,9 @@
 									"disabled": true
 								},
 								{
-									"key": "patientDetails.relatives",
-									"value": "",
-									"type": "text",
-									"disabled": true
+									"key": "patientDetails.Relatives[0].IsRelative",
+									"value": "true",
+									"type": "text"
 								},
 								{
 									"key": "patientDetails.IsActive",
@@ -2074,6 +2070,26 @@
 								{
 									"key": "patientDetails.AgeMonth",
 									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.Relatives[0].RelatedToPatientId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.Relatives[0].RelationToPatient",
+									"value": "Brother",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.Relatives[0].ModifiedById",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "patientDetails.Relatives[0].ModifiedDate",
+									"value": "2025-10-21",
 									"type": "text"
 								}
 							]
