@@ -3426,7 +3426,20 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/Country/GetAllCountry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Country",
+								"GetAllCountry"
+							]
+						}
 					},
 					"response": []
 				}
