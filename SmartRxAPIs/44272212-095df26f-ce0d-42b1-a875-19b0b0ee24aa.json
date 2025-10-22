@@ -3419,7 +3419,7 @@
 			"name": "Country",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "GetAllCountry",
 					"id": "44272212-d47f6ec8-0bd6-4768-af82-e76034bb27c3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
