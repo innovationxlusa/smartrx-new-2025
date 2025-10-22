@@ -3416,6 +3416,11 @@
 			"id": "44272212-ef41403e-a156-41df-9140-f009e059e316"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "44272212-a9a3f642-70e5-4bc8-a68f-45838d09a47a"
+		},
+		{
 			"name": "Error Test API",
 			"id": "44272212-b3a16d04-7ca6-451b-8993-eeb2917e9af6",
 			"protocolProfileBehavior": {
