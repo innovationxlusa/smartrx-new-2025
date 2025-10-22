@@ -3416,8 +3416,21 @@
 			"id": "44272212-ef41403e-a156-41df-9140-f009e059e316"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "Country",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "44272212-d47f6ec8-0bd6-4768-af82-e76034bb27c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "44272212-a9a3f642-70e5-4bc8-a68f-45838d09a47a"
 		},
 		{
