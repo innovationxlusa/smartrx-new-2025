@@ -2484,6 +2484,37 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Dashboard-Summary Copy",
+					"id": "44272212-007b85ea-9f21-41e3-b1df-c607e6244dd9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/api/dashboard/dashboard-summary?userId=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"dashboard",
+								"dashboard-summary"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "44272212-f210bf17-a866-44ed-b3cd-0bfa0ec6c64c"
