@@ -2495,7 +2495,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:7000/api/dashboard/dashboard-counts?userId=8",
+							"raw": "http://localhost:7000/api/dashboard/dashboard-counts?userId=8&patientId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2510,6 +2510,10 @@
 								{
 									"key": "userId",
 									"value": "8"
+								},
+								{
+									"key": "patientId",
+									"value": "1"
 								}
 							]
 						}
