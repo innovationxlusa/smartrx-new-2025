@@ -3507,7 +3507,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Live Request for SmartRx",
 			"id": "44272212-a044e281-d2a0-44c0-8129-ff81ba1f704b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
