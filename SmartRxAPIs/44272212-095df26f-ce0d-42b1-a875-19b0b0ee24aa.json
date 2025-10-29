@@ -3545,7 +3545,7 @@
 			"response": []
 		},
 		{
-			"name": "Live Request for SmartRx Copy",
+			"name": "Live Upload File",
 			"id": "44272212-4976c17b-dea4-4973-8ab2-a83265036767",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
