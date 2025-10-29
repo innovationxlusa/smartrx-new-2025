@@ -3513,8 +3513,34 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PrescriptionId\":9,\r\n    \"UpdatedBy\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://182.160.111.50:8443/api/prescriptionupload/update-smartrx-request/51",
+					"protocol": "https",
+					"host": [
+						"182",
+						"160",
+						"111",
+						"50"
+					],
+					"port": "8443",
+					"path": [
+						"api",
+						"prescriptionupload",
+						"update-smartrx-request",
+						"51"
+					]
+				}
 			},
 			"response": []
 		}
