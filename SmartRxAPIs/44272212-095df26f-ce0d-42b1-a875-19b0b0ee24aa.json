@@ -323,7 +323,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "// {\r\n//     \"UserName\":\"01716155239\",\r\n//     \"AuthType\":2,\r\n//     \"Password\":\"123456aA@\"\r\n// }\r\n{\r\n    \"Otp\": \"\",\r\n    \"UserId\": \"\",\r\n    \"AuthType\": 2,\r\n    \"UserName\": \"8801716155239\",\r\n    \"Password\": \"\",\r\n    \"rememberMe\": false\r\n}",
+							"raw": "{\r\n    \"UserId\": 8  \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -331,19 +331,16 @@
 							}
 						},
 						"url": {
-							"raw": "https://182.160.111.50:8443/api/auth/login",
-							"protocol": "https",
+							"raw": "http://localhost:7000/api/auth/generate-token",
+							"protocol": "http",
 							"host": [
-								"182",
-								"160",
-								"111",
-								"50"
+								"localhost"
 							],
-							"port": "8443",
+							"port": "7000",
 							"path": [
 								"api",
 								"auth",
-								"login"
+								"generate-token"
 							]
 						}
 					},
