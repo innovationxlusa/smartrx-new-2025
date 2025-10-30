@@ -313,7 +313,7 @@
 					"response": []
 				},
 				{
-					"name": "Login Copy",
+					"name": "Generate Token",
 					"id": "44272212-ce448be0-787f-4b87-bd7f-f3f373c52a5f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
