@@ -297,15 +297,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://192.168.40.112:9090/api/auth/login",
+							"raw": "http://localhost:7000/api/auth/login",
 							"protocol": "http",
 							"host": [
-								"192",
-								"168",
-								"40",
-								"112"
+								"localhost"
 							],
-							"port": "9090",
+							"port": "7000",
 							"path": [
 								"api",
 								"auth",
